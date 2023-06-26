@@ -6,6 +6,9 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import ForgotPassword from "./pages/ForgotPassword";
 import Header from "./componants/Header";
+import "./assets/css/style.css"
+
+
  
 
 
@@ -29,3 +32,4 @@ export default function App() {
     </div>
   );
 }
+
