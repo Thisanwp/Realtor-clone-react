@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { HiEyeOff, HiEye } from "react-icons/hi";
+
 import { Link } from 'react-router-dom';
+import OAuth from '../componants/OAuth';
 
 
 
@@ -53,21 +55,28 @@ export default function SignIn() {
         </div>
         
 
-        <div>
-          <p>
+        <div className="flex justify-between whitespace-nowrap text-sm sm:text-lg textDecoration: 'none'  " id="underline">
+          <p className="mb-6  " >
             Don't have a account?
-          <link to="/sign-up"></link>
-          </p>
+          <Link to="/sign-up" className=" text-red-600 hover:text-red-800 transition duration-200 ease-in-out ml-2 text-decoration: none" style={{ textDecoration: 'none' }} > Register</Link>
+        </p> 
+        
+        <p>
+          <Link to="/forgot-password" className=" text-blue-600 hover:text-blue-800 transition duration-200 ease-in-out ml-2 text-decoration: none" style={{ textDecoration: 'none' }}>Forgot password ?</Link>
+        </p>
+          
         </div> 
-              
-              
-            
-
+        <button type="submit" className="w-full bg-blue-500 text-white px-7 py-3 text-sm font-medium uppercase rounded-md shadow-md hover:bg-blue-700 transition duration-150 ease-in-out cursor-pointer hover:shadow-lg active:bg-yellow-300  "> Sign In</button>
+     <div  className="my-4 before:border-t before:flex-1 before:border-gray-300 after:border-t after:flex-1 after:border-gray-300   " >
+     <p className="text-center font-light mx-4 justify-between">OR</p>
+     </div>
+     <OAuth></OAuth>
       </form>
     </div>
+
   </div>
 
-    </section>
+    </section> 
 
     
   );

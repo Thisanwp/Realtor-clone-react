@@ -1,4 +1,9 @@
-@tailwind ase;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+body{
+    background-color: rgb(174, 231, 191);
+}
+
 
